@@ -1,0 +1,72 @@
+h1{
+  /* this will change the font of the text. We will be using something called web safe font. */
+  font-family: cursive;
+  /* now adjust the font size */
+  font-size: 46px;
+  /* now adjust the alignment of fonts */
+  text-align: center;
+}
+h2{
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+h3{
+  font-family: cursive;
+  font-size: 24px;
+  text-align: center;
+}
+h4{
+  font-family: cursive;
+  font-size: 24px;
+  text-align: center;
+}
+/* target the body of the page */
+body{
+  background-color: #faa27f;
+  background-size: cover;
+}
+header{
+  /* first we will adjust the width of the header. We will use the % measurement for this instead of the px measurement */
+  width: auto;
+  header: 250px;
+  background-color: #331003;
+  /* Since we are not making the header the full width of the screen we can force our element to the middle of the page by applying a margin to the left and right. The margin properties adds space to the surrrounding area  */
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+/* now we need to navigate to the image, this is called navigating the dom. */
+header > div > a > img{
+  width: auto;
+  height: 125px;
+}
+header > nav > ul{
+  list-style: none;
+  padding: 0px;
+
+}
+header > nav > ul > li > a{
+  color: #ffffff;
+  text-decoration: none;
+}
+section{
+  width: auto;
+  margin: auto;
+  background-color: #faa27f;
+  padding: 2%;
+}
+table, th, td{
+  border: 1px solid;
+  width: 70%;
+}
+footer{
+  width: auto;
+  margin: auto;
+  text-align: center;
+  color: #ffffff;
+  background-color: #331003;
+}

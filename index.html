@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- add meta data -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 2</title>
+    <meta name="description" content="This is my assignment 2">
+    <meta name="robots" content="noindex, nofollow">
+    <!--next we will need to link our css file to our html file. We do this because it is a bad practice to have our CSS in the same file as our HTML. HAving them together will also give errors when validating the HTML. -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <!-- add the div to contain the logo -->
+        <div>
+          <a href="index.html">
+            <img src="./img/sample-logo.png" alt="header logo">
+          </a>
+        </div>
+        <!-- add our nav -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- now will we add a row to contain the main title of our page. We will need to be carefuk  when adding CSS to our section elements because there will be so many. -->
+      <!-- section 1 -->
+      <section>
+        <h1>DIYA'S PIZZERIA</h1>
+      </section>
+      <!-- section 2 -->
+      <section>
+        <h2>Our Walk-in Specials:</h2>
+      </section>
+      <!-- next we will add html forms and table -->
+      <form method="post" name="forms" action="index.html">
+      <div class="forms">
+      <div class="cell1">
+        <table>
+          <tr>
+            <th>Size</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Small</td>
+            <td>$11.55</td>
+          </tr>
+          <tr>
+            <td>Medium</td>
+            <td>$15.25</td>
+          </tr>
+          <tr>
+            <td>Large</td>
+            <td>$22.00</td>
+          </tr>
+          <tr>
+            <td>X-Large</td>
+            <td>$25.00</td>
+          </tr>
+          <tr>
+            <td colspan="2">Toppings</td>
+          </tr>
+          <tr>
+            <td>$1.79 each</td>
+          </tr>
+          <tr>
+            <td colspan="2">Plus 13% HST</td>
+          </tr>
+          <tr>
+            <td colspan="2">Free Delivery</td>
+          </tr>
+        </table>
+        Your Price<br />
+        <input name="price" size="8" readonly="readonly" />
+      </div>
+      <div class="forms2">
+        <!-- adding fieldset tag -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          Name <input name="name" /><br />
+          Phone No. <input type="tel" name="phone" /><br />
+          Date of Birth <input type="date" name="birthday" />
+        </fieldset>
+        <fieldset>
+          <legend>Pizza size &amp; Crust</legend>
+          <select name="size" size="2">
+            <option>Select Pizza Size</option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+            <option value="4">X-Large</option>
+          </select>
+          <select name="crust" size="2">
+            <option value="1">Regular Crust</option>
+            <option value="2">Thin Crust</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Cheeses</legend>
+          <input type="radio" name="cheese" value="1" />Mozzarella
+          <input type="radio" name="cheese" value="2" />Cheddar
+          <input type="radio" name="cheese" value="3" />Feta
+        </fieldset>
+        <fieldset>
+          <legend>Sauces</legend>
+          <input type="radio" name="sauce" value="1" />Pizza Sauce
+          <input type="radio" name="sauce" value="2" />Butter Chicken
+          <input type="radio" name="sauce" value="3" />Garlic Sauce
+        </fieldset>
+        <fieldset>
+          <legend>Special Instructions or Notes</legend>
+          <textarea name="instructions" rows="3" cols="42"></textarea>
+        </fieldset>
+        <input type="submit" value="PLACE YOUR ORDER" />
+        <input type="reset" value="START OVER" />
+      </div>
+      <div class="forms2">
+        <fieldset>
+          <legend>Choose Toppings - $1.49 Each</legend>
+          <div class="forms2">
+            <input type="checkbox" name="topping" value="2" /> Bacon<br />
+            <input type="checkbox" name="topping" value="3" /> Ham<br />
+            <input type="checkbox" name="topping" value="4" /> Pepperoni<br />
+            <input type="checkbox" name="topping" value="5" /> Ground beef<br />
+            <input type="checkbox" name="topping" value="6" /> Sausage<br />
+          </div>
+          <div class="forms2">
+            <input type="checkbox" name="topping" value="7" /> Tomato<br />
+            <input type="checkbox" name="topping" value="9" /> Green Peppers<br />
+            <input type="checkbox" name="topping" value="10" /> Mushrooms<br />
+            <input type="checkbox" name="topping" value="11" /> Red Onions<br />
+            <input type="checkbox" name="topping" value="12" /> Spinach<br />
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </form>
+  </main>
+  <footer>
+   <h4>Thankyou!</h4>
+  </footer>
+  </body>
+</html>
